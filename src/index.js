@@ -6,7 +6,7 @@ function clickEventHandler(e){
 
 function addClickEvent(){
   for(let i = 0; i < btns.length; i++){
-    btns[i].addEventListener('click', clickEventHandler)
+    btns[i].addEventListener('mousedown', clickEventHandler)
   }
 }
 
@@ -18,7 +18,7 @@ function keypadEventHandler(e){
     }
 }
 function addKeypadEvent(){
-  addEventListener('keyup',keypadEventHandler)
+  addEventListener('keydown',keypadEventHandler)
 }
 
 
@@ -50,9 +50,9 @@ function move(direction){
 
 function clearEvents (){
   for(let i = 0; i < btns.length; i++){
-    btns[i].removeEventListener('click', clickEventHandler)
+    btns[i].removeEventListener('mousedown', clickEventHandler)
   }
-  removeEventListener('keyup', keypadEventHandler)
+  removeEventListener('keydown', keypadEventHandler)
 }
 
 function addEvents (){
