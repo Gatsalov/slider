@@ -34,15 +34,15 @@ function move(direction){
     parent.addEventListener('transitionend',(e)=>{
       addEvents()
     })
-    if(direction == 'left' && nextSibling){
-        clearEvents();
-        parent.style.left = `${ currentPosition -= shiftPosition}px`;
-        nextSibling.classList.add('focus');
-        slide.classList.remove('focus');
-    }else if(direction == 'right' && prevSibling){
+    if(direction == 'left' && prevSibling){
         clearEvents();
         parent.style.left = `${ currentPosition += shiftPosition}px`;
         prevSibling.classList.add('focus');
+        slide.classList.remove('focus');
+    }else if(direction == 'right' && nextSibling){
+        clearEvents();
+        parent.style.left = `${ currentPosition -= shiftPosition}px`;
+        nextSibling.classList.add('focus');
         slide.classList.remove('focus');
     }
 }
