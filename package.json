@@ -1,0 +1,15 @@
+{
+  "name": "slider",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Gatsalov/slider.git",
+  "author": "Alikhan Gatsalov <alihan_g5@mail.ru>",
+  "license": "MIT",
+  "homepage":"https://Gatsalov.github.io/slider",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  }
+}
