@@ -8,8 +8,5 @@
   "homepage":"https://Gatsalov.github.io/slider",
   "dependencies": {
     "gh-pages": "^2.0.1"
-  },
-  "scripts": {
-    "deploy": "gh-pages -d build"
   }
 }
